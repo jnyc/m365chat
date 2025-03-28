@@ -1,0 +1,43 @@
+{
+  "name": "@suarez999/m365chat",
+  "version": "0.1.0",
+  "description": "M365Chat is a Model Context Protocol (MCP) server for Microsoft Graph.",
+  "license": "MIT",
+  "author": "JNYC",
+  "homepage": "https://github.com/jnyc/m365chat",
+  "bugs": "https://github.com/jnyc/m365chat/issues",
+  "main": "main.js",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "graph",
+    "microsoft",
+    "m365chat",
+    "model",
+    "context",
+    "protocol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnyc/m365chat.git",
+    "directory": "src/mcp"
+  },
+  "bin": {
+    "m365chat": "build/main.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/main.js"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@azure/msal-node": "^3.3.0",
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
